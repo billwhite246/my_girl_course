@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<link rel="stylesheet" type="text/css" href="style/main.css">
+<script type="text/javascript" src="script/zepto.min.js"></script>
+<script type="text/javascript" src="script/flexiable.js"></script>
+<script type="text/javascript" src="script/timetable.js"></script>
+<title>课表</title>
+<style>
+
+</style>
+</head>
+<body>
+	<div class="container">
+    <div id="table1"></div>
+	</div>
+  <script type="text/javascript">
+    /*
+      week代表星期几上课，
+      seq代表第几节，
+      dur表示上课长度，如2代表连上2节，
+      evt代表具体内容。
+    */
+    var datas= [
+      { "week": 1, "seq": 5, "dur": 2, "evt": "人工智能哲学与伦理研@第一综合楼7楼中厅(1-18周5-6节)" },
+      { "week": 2, "seq": 1, "dur": 3, "evt": "管理研究方法@北四701<br/>(1-18周1-3节)"},
+      { "week": 3, "seq": 3, "dur": 2, "evt": "经济学思维方式@第一综合楼7楼中厅<br/>(1-18周3-4节)" },
+      { "week": 3, "seq": 5, "dur": 2, "evt": "眼动仪原理与应用@第一综合楼7楼中厅<br/>(1-18周5-6节)" },
+      { "week": 4, "seq": 3, "dur": 2, "evt": "英语读写(必修)@北三402<br/>(1-18周3-4节)" },
+	    { "week": 4, "seq": 7, "dur": 2, "evt": "英语听说(必修)@北三502<br/>(1-9周7-8节)" },
+      { "week": 4, "seq": 9, "dur": 2, "evt": "人性与行为研究@第一综合楼7楼中厅<br/>(1-18周9-10节)" },
+      { "week": 5, "seq": 5, "dur": 3, "evt": "中级微观经济学@北三708<br/>(1-18周5-7节)" },
+    ];
+
+    $("#table1").timeTable({
+      classNum:"12",
+      wlist:datas
+    });
+	
+	$("#table1 td").style = "border-radius: 8px;margin: 3px;";
+
+  </script>
+</body>
+</html>

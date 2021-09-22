@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 0.373rem;
+  color: #333;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/*component @tabletime*/
+.tabletime {
+  width: 10rem;
+  position: relative;
+}
+.tabletime table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabletime table tr {
+  /* height: 1.36rem; */
+  height: 2.5rem;
+}
+.tabletime table thead tr {
+  /* height: 0.667rem; */
+  height: 0.6rem;
+}
+.tabletime table th,
+.tabletime table td {
+  width: 1.333rem;
+  /* border-bottom: 2px solid #F1F5F6; */
+  border-bottom: 2px solid #f1f5f6;
+  border-right: 2px solid #f1f5f6;
+  text-align: center;
+  /* margin: 30px 0px 30px 0px; */
+  margin: 0 auto;
+}
+.tabletime table th:first-child,
+.tabletime table td:first-child {
+  width: 0.6667rem;
+}
+.tabletime table th,
+.tabletime table td:first-child {
+  background-color: #c6c6ff;
+  color: #7967d0;
+  border-color: #c6c6ff;
+}
+.tabletime .lightUp {
+  color: #fff;
+  background: #7967d0;
+}
+.tabletime table th:first-child {
+  background-color: #fff;
+}
+.tabletime .classitem {
+  font-family: "黑体";
+  font-weight: 50;
+  position: absolute;
+  /* width: 1.307rem; */
+  width: 12.2%;
+  height: 1.2rem;
+  border-radius: 15px;
+  box-shadow: 50px 50px 80px 50px solid #000000;
+  box-sizing: border-box;
+  padding: 0.04rem;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 0.35rem;
+  text-align: center;
+  /* padding:0px; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
