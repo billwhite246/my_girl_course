@@ -1,1 +1,1 @@
-# My Girl's School Timetable
+# My Friend's School Timetable
